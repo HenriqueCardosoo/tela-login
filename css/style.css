@@ -66,7 +66,7 @@ span.teste {
   z-index: 1;
 }
 
-input::after {
+.label-senha::before {
   content: '';
   background-image: url('../img/esconder.svg');
   position: absolute;
@@ -80,7 +80,7 @@ input::after {
   transform: translateY(-50%);
 }
 
-label::after {
+.label-cidade::before {
   content: '';
   background-image: url('../img/Vector1.svg');
   position: absolute;
@@ -193,17 +193,10 @@ label::after {
 }
 
 @media (max-width: 500px) {
-  .cadastro {
-    height: 650px;
-  }
-  input::after {
+  .label-senha::before {
     left: 35vh;
-    top: 42%;
-    transform: translateY(-40%);
   }
-  label::after {
-    left: 35vh;
-    top: 78%;
-    /* transform: translateY(-40%); */
+  .label-cidade::before {
+    left: 36vh;
   }
 }
